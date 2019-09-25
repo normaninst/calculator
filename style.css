@@ -1,5 +1,39 @@
 h1 {
     margin: auto;
+    align-self: center;
     text-align: center;
     color: blue;
 }
+
+.container {
+    display: grid;
+    position: relative;
+    justify-content: center;
+    margin-top: 100px;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: 120px 120px 120px 120px;
+    grid-gap: 2px;
+    
+}
+
+#display {
+    position: absolute;
+    align-self: center;
+    bottom: 490px;
+    left: 648px;
+    height: 65px;
+    width: 600px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3px;
+    clear: right;
+}
+
+.button {
+    display: flex;
+    border: 1px solid rgba(0 , 0 ,0);
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;  
+}
+
