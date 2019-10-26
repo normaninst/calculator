@@ -2,38 +2,78 @@ h1 {
     margin: auto;
     align-self: center;
     text-align: center;
-    color: blue;
+    position: relative;
+    margin-top: 20px;
+    font-size: 40px;
+    color: rgb(212, 198, 198);
+}
+
+body {
+    background-color: rgb(32, 65, 95);
+}
+
+.calculator {
+    max-width: 480px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .container {
-    display: grid;
     position: relative;
-    justify-content: center;
-    margin-top: 100px;
-    grid-template-columns: 150px 150px 150px 150px;
-    grid-template-rows: 120px 120px 120px 120px;
-    grid-gap: 2px;
-    
+    top: 30%;
+    display: grid;
+    grid-template-columns: 120px 120px 120px 120px;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-gap: 2px; 
+    max-width: 480px; 
 }
 
-#display {
-    position: absolute;
-    align-self: center;
-    bottom: 490px;
-    left: 648px;
+.display {
+    margin-top: 3ch;
+    position: relative;
+    top: 30%;
+    margin-bottom: 5px;
     height: 65px;
-    width: 600px;
-    border: 1px solid black;
+    text-align: right;
+    overflow: auto;
+    text-overflow: ellipsis;
+    font-size: 50px;
+    width: 480px;
+    border: 2px solid black;
     border-radius: 5px;
-    padding: 3px;
-    clear: right;
+    padding: 2px;
+    background-color: rgb(230, 230, 230);
+    color: rgb(63, 60, 60);
 }
 
-.button {
-    display: flex;
+button {
     border: 1px solid rgba(0 , 0 ,0);
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;  
+    color: white;
+    font-size: 30px;
+    background: black;
 }
 
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+.operator {
+    background-color: rgb(65, 61, 61)
+}
+
+.clear {
+    width: 240px;
+    left: 13px;
+}
+
+.equal {
+    background-color: red;
+    position: relative;
+    width: 250px;
+    left: 115px;
+}
+
+.equal:hover {
+    background-color: red;
+}
